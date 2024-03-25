@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClearPath Login Page</title>
+
+<link rel="stylesheet" href="Css.css">
+<script src="Js.js"></script>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("pass");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+    
+    function validate() {
+        var username = document.getElementsByName("username")[0].value;
+        var password = document.getElementsByName("password")[0].value;
+        
+        if (username === "" || password === "") {
+            alert("Username and password cannot be empty");
+        } else {
+            alert("Login successful!");
+            // Add your login logic here
+        }
+    }
+</script>
+</head>
+<body>
+    <div class="nav-bar">
+        <ul>
+            <li><h2 class="logo">Clear<span>Path</span></h2></li>
+            <li><a href="#">Please log in to learn about us!</a></li>
+        </ul>
+    </div>
+
+    <h3>Welcome To Clear<span>Path</span>, To Get Started, Please enter your login details.</h3>
+    <div class="form">
+        <div id="Login" class="input-group">
+            <h1>Clear<span>Path</span> Login</h1>
+            <p>Username :</p>
+            <input type="text" name="username" placeholder="Name Here" value="12345">
+            <p>Password :</p>
+            <input type="password" name="password" placeholder="Password Here" id="pass" value="12345">
+            <input type="checkbox" onclick="myFunction()">
+            <input type="button" value="LOGIN" onclick="validate()">
+        </div>
+    </div>
+ 
+    <div>
+        <p id="length"></p>
+    </div>
+</body>
+</html>

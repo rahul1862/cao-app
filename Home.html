@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+
+<div class="nav-bar">
+    <ul>
+        <li><h2 class="logo">Clear<span>Path</span></h2></li>
+        <li><a class="active" href="Home.html">Home</a></li>
+        <li><a href="Saved.html">Saved Items</a></li>
+        <li><a href="Academic.html">Academic</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
+    </ul>
+    <span id="username" class="username"></span>
+</div>
+<h1>Welcome to Clear<span>Path</span>!</h1>
+
+<div class="container">
+    <h1>Please select the area you would like to explore!</h1>
+    <div>
+        <a href="Academic.html" class="button">Course Hub</a>
+        <a href="Saved.html" class="button">Your Saved Items</a>
+    </div>
+</div>
+
+<script>
+    // Get the element where you want to display the username
+    var usernameElement = document.querySelector('#username');
+
+    // Retrieve the username from sessionStorage
+    var username = sessionStorage.getItem('username');
+
+    // Display the username in the element
+    if (username) {
+        usernameElement.textContent = username;
+    }
+
+</script>
+</body>
+</html>

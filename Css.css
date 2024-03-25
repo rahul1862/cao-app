@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh; /* Use min-height to ensure the body expands with content */
+  background: url('file:///C:/Users/Rahul/Downloads/Rahul/RahulImg.jpg') no-repeat center center fixed, linear-gradient(to bottom, black, red); /* Set background image and gradient */
+  background-size: cover; /* Cover the entire viewport */
+  color: white;
+}
+  
+
+
+
+.form {
+  
+  width: 270px;
+  max-width: 80%; /* Adjust to fit different screen sizes */
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 40px 25px;
+  border-radius: 30px;
+  background: lightcoral;
+}
+
+h1, h2, h3, h4 {
+  
+  color: white; /* No need to repeat font-family if it's the same */
+}
+
+.nav-bar {
+  width: 100%; /* Occupy full width */
+  padding: 15px 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.nav-bar ul {
+  list-style: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end; /* Align navigation to the right */
+}
+
+.nav-bar li {
+  margin-right: 20px; /* Adjust spacing between navigation items */
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.button {
+  display: inline-block; /* Use inline-block for buttons */
+  background: linear-gradient(to right, #6741ff, #642bff);
+  color: #fff;
+  font-size: 18px; /* Adjust font size */
+  padding: 15px 30px; /* Adjust padding for better proportion */
+  border-radius: 30px;
+  text-decoration: none;
+  margin: 20px 10px; /* Adjust margin for better spacing */
+  transition: background-color 0.5s;
+}
+
+.button:hover {
+  background-color: #005fa3;
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+  .form {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+  
+  .button {
+    width: 100%; /* Make buttons full-width on smaller screens */
+    margin: 10px 0; /* Adjust margin for better spacing */
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-analytics.js"></script>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CAO Application Page</title>
+<link rel="stylesheet" href="Css.css">
+</head>
+<body>
+
+    <div class="nav-bar">
+        <ul>
+            <li><h2 class="logo">Clear<span>Path</span></h2></li>
+            <li><a class="active" href="Home.html">Home</a></li>
+            <li><a href="Saved.html">Saved Items</a></li>
+            <li><a href="Academic.html">Academic</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+        </ul>
+        <span id="username" class="username"></span>
+    </div>
+    
+    <h1>Welcome to Clear<span>Path's</span> Academic Hub</h1>
+
+    <div class="inputbox">
+        <input type="text" value="" id="course" required>
+        <label for="course">Course</label>
+      </div>
+      
+      <div class="inputbox">
+        <input type="text" value="" id="location" required>
+        <label for="location">Location</label>
+      </div>
+      
+      <div class="inputbox">
+        <input type="text" value="" id="courseFees" required>
+        <label for="courseFees">Course Fees</label>
+      </div>
+      <input type="submit" value="submit">
+        
+      <script src="Js.js"></script>
+    
+    <h1>Welcome to ClearPath</h1>
+    <p>This website is a course application where you can find your ideal course</p>
+    <p>You can find many courses on this application</p>
+    <p>You can pick from course type, fees and location of your needs.</p>
+    
+    <div id="jobs-container"></div>
+
+
+
+</body>
+</html>
